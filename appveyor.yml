@@ -6,5 +6,4 @@ build_script:
   - sqlcmd -b -Q "CREATE TABLE dbo.Persons (IDPerson int IDENTITY(1,1) NOT NULL PRIMARY KEY, Name varchar(20) NOT NULL, City varchar(30) NOT NULL)" -d test
   - sqlcmd -b -Q "INSERT INTO Persons (Name, City) VALUES ('Philip', 'Montreal')" -d test
   - sqlcmd -b -Q "SELECT * FROM Persons" -d test
-  - sqlcmd -b -Q "SELECT * FROM FROM" -d test
-  - echo %errorlevel%
+  - sqlcmd -b -d test -i test.sql
