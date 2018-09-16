@@ -4,6 +4,8 @@ GO
 USE test
 GO
 
+SET NOCOUNT OFF
+
 CREATE TABLE dbo.Persons (IDPerson int IDENTITY(1,1) NOT NULL PRIMARY KEY, Name varchar(20) NOT NULL, City varchar(30) NOT NULL)
 
 INSERT INTO Persons (Name, City) VALUES ('Philip1', 'Montreal')
