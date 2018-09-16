@@ -7,3 +7,4 @@ build_script:
   - sqlcmd -Q "INSERT INTO Persons (Name, City) VALUES ('Philip', 'Montreal')" -d test
   - sqlcmd -Q "SELECT * FROM Persons" -d test
   - sqlcmd -Q "SELECT * FROM FROM" -d test
+  - echo %errorlevel%
