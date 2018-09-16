@@ -1,5 +1,5 @@
 services:
-- mssql2017
+- mssql
 
-init:
+install:
 - sqlcmd -S "(local)" -U "sa" -P "Password12!" -Q "SELECT * FROM information_schema.tables;" -d "master"
