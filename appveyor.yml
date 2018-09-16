@@ -1,5 +1,5 @@
 services:
-- mssql
+- mssql2014
 
 install:
-- sqlcmd -b -E -S "$sqlInstance" -Q "CREATE DATABASE test"
+- sqlcmd -b -E -S "(local)\SQL2014" -Q "CREATE DATABASE test"
