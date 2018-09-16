@@ -4,7 +4,7 @@ GO
 USE test
 GO
 
-SET NOCOUNT OFF
+SET NOCOUNT ON
 
 CREATE TABLE dbo.Persons (IDPerson int IDENTITY(1,1) NOT NULL PRIMARY KEY, Name varchar(20) NOT NULL, City varchar(30) NOT NULL)
 
