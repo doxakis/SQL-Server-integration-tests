@@ -2,5 +2,4 @@ services:
 - mssql2017
 
 init:
-- sqlcmd -S localhost -U SA -P Password12! -Q 'select @@VERSION'
 - sqlcmd -S "(local)" -U "sa" -P "Password12!" -Q "SELECT * FROM information_schema.tables;" -d "master"
