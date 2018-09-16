@@ -2,4 +2,4 @@ services:
   - mssql2017
 
 build_script:
-  - sqlcmd -b -E -S "(local)" -Q "CREATE DATABASE mytest" -d "master"
+  - sqlcmd -Q "CREATE DATABASE mytest" -d "master"
