@@ -1,5 +1,5 @@
 services:
   - mssql2017
 
-install:
-  - sqlcmd -b -E -S "(local)\SQL2017" -Q "CREATE DATABASE mytest"
+build_script:
+  - sqlcmd -b -E -S "(local)\SQL2017" -Q "CREATE DATABASE mytest" -d "master"
