@@ -2,7 +2,7 @@ services:
   - mssql2017
 
 build_script:
-  - sqlcmd -Q "CREATE DATABASE mytest"
-  - sqlcmd -Q "CREATE TABLE Persons (IDPerson int NOT NULL PRIMARY KEY, Name varchar(255) NOT NULL, City varchar(255) NOT NULL)"
-  - sqlcmd -Q "INSERT INTO Persons (Name, City) VALUES ('Philip', 'Montreal')"
-  - sqlcmd -Q "SELECT * FROM Persons"
+  - sqlcmd -Q "CREATE DATABASE test"
+  - sqlcmd -Q "CREATE TABLE dbo.Persons (IDPerson int IDENTITY(1,1) NOT NULL PRIMARY KEY, Name varchar(255) NOT NULL, City varchar(255) NOT NULL)" -d test
+  - sqlcmd -Q "INSERT INTO Persons (Name, City) VALUES ('Philip', 'Montreal')" -d test
+  - sqlcmd -Q "SELECT * FROM Persons" -d test
