@@ -2,4 +2,4 @@ services:
   - mssql2017
 
 install:
-  - sqlcmd -S "(local\SQL2017)" -U "sa" -P "Password12!" -Q "create database test;"
+  - sqlcmd -S "(local)\SQL2017" -U "sa" -P "Password12!" -Q "create database test;"
