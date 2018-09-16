@@ -2,6 +2,7 @@ SELECT TOP(1) Name FROM Persons
 
 PRINT('Here 1')
 
-SELECT TOP(1) IDPerson FROM Persons
+IF EXISTS(SELECT TOP(1) IDPerson FROM Persons)
+    THROW 50000,'THROW TEST',1
 
 PRINT('Here 2')
