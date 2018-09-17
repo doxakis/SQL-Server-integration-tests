@@ -1,4 +1,5 @@
-# SQL-Server-integration-tests
+# SQL-Server-integration-tests [![Build status](https://ci.appveyor.com/api/projects/status/e8lmty41c5sxf89c?svg=true)](https://ci.appveyor.com/project/doxakis/sql-server-integration-tests)
+
 Performing integration tests with SQL Server in the cloud with appveyor.
 
 Check out the files: appveyor.yml and test.sql
